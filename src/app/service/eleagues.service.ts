@@ -9,7 +9,8 @@ export class EleaguesService {
   private eLeaguesUrl: string;
 
   constructor(private http: HttpClient) {
-    this.eLeaguesUrl = 'http://localhost:8080/soccer/leagues?countryId=113';
+    //this.eLeaguesUrl = 'http://localhost:8080/soccer/leagues?countryId=113';//spain
+    this.eLeaguesUrl = 'http://localhost:8080/soccer/leagues?countryId=42';//england
   }
 
   public findAll(): Observable<League[]> {

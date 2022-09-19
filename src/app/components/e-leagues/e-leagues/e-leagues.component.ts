@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { League } from '../../model/league';
-import { EleaguesService } from '../../service/eleagues.service'; 
+import { League } from '../../../model/league';
+import { EleaguesService } from '../../../service/eleagues.service'; 
 
 @Component({
   selector: 'app-e-leagues',

@@ -1,0 +1,28 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Position</th>
+          <th scope="col">Name</th>
+          <th scope="col">Points</th>
+          <th scope="col">Wins</th>
+          <th scope="col">Draws</th>
+          <th scope="col">Losses</th>
+          <th scope="col">Goal Diff.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stat of seasonStats">
+          <td>{{ stat.position }}</td>
+          <td>{{ stat.name }}</td>
+          <td>{{ stat.points }}</td>
+          <td>{{ stat.wins }}</td>
+          <td>{{ stat.draws }}</td>
+          <td>{{ stat.losses }}</td>
+          <td>{{ stat.goalDiff }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
